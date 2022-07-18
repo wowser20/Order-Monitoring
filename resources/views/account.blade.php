@@ -12,13 +12,13 @@
   <div class="container">
     <ul class="navbar-nav">
     <li class="nav-item">
-        <a class="nav-link active" href="{{route('home')}}">Home</a>
+        <a class="nav-link" href="{{route('home')}}">Home</a>
       </li>
     <li class="nav-item">
         <a class="nav-link " href="{{route('order')}}">Orders</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="{{route('account')}}">Account</a>
+        <a class="nav-link active" href="{{route('account')}}">Account</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('setting')}}">Settings</a>
