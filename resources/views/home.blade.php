@@ -11,7 +11,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark" style="background: #76b5c5; ">
       <div class="container py-2">
-        <a class="navbar-brand" href="#" style="font-family: 'Poppins', sans-serif">ARTCAFE</a>
+        <a class="navbar-brand" href="{{route('home')}}" style="font-family: 'Poppins', sans-serif">ARTCAFE</a>
         <ul class="navbar-nav ">
           <li class="nav-item">
             <a class="nav-link active" href="{{ route('home')}}">Home</a>

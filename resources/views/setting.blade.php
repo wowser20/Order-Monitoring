@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Laravel Example</title>
+  <title>Setting</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,16 +37,16 @@
           <a class="navbar-brand" href="#" style="font-family: 'Poppins', sans-serif">ARTCAFE</a>
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link active" href="{{ route('home')}}">Home</a>
+              <a class="nav-link" href="{{ route('home')}}">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('order')}} ">Orders</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="/account">Account</a>
+                <a class="nav-link" href="/account">Account</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/setting">Settings</a>
+                <a class="nav-link active" href="/setting">Settings</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="{{route('index')}}" onclick="return confirm('Are you sure you want logout?')">Logout</a>

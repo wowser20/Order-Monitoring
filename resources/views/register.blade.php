@@ -1,7 +1,7 @@
 <!DOCTYPE html>
  <html lang="en">
  <head>
-   <title>Laravel 9 - Bootstrap</title>
+   <title>Register</title>
    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -30,10 +30,10 @@ body {
             <a class="navbar-brand" href="#" style="font-family: 'Poppins', sans-serif">ARTCAFE</a>
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link active" href="{{ route('home')}}">Home</a>
+                <a class="nav-link" href="{{ route('home')}}">Home</a>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="{{route('register')}}">Register</a>
+                  <a class="nav-link active" href="{{route('register')}}">Register</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="{{route('login')}}">Sign In</a>
