@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <style>
 body {
@@ -26,6 +27,22 @@ body {
 </style>
 
  <body>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background: #76b5c5; ">
+    <div class="container py-2">
+      <a class="navbar-brand" href="#" style="font-family: 'Poppins', sans-serif">ARTCAFE</a>
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ route('home')}}">Home</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{{route('register')}}">Register</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{{route('login')}}">Sign In</a>
+      </li>
+      </ul>
+    </div>
+  </nav>
 
 
 

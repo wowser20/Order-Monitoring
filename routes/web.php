@@ -1,4 +1,7 @@
 <?php
+
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,15 +24,28 @@ Route::get('/', function () {
 
 Route::view('/home','home')->name('home');
 Route::view('/setting','setting')->name('setting');
-Route::view('/account','account')->name('account');
-Route::view('/order','order')->name('order');
+
+Route::view('/index','index')->name('index');
 Route::view('/register','register')->name('register');
-Route::view('/add','add')->name('add');
-Route::view('/edit','edit')->name('edit');
 
 
-Route::get('/login',[UserController::class,'login'])->name('login');
-Route::get('/register',[UserController::class,'register'])->name('register');
+
+
+Route::get('login',[UserController::class,'login'])->name('login');
+Route::get('register',[UserController::class,'register'])->name('register');
+Route::get('/order',[OrderController::class,'index'])->name('order');
+Route::get('/account',[UserController::class,'index'])->name('account');
+Route::get('/setting',[CategoryController::class,'index'])->name('setting');
+
 
 Route::post('registervalidate',[UserController::class,'registervalidate'])->name('registervalidate');
 Route::post('loginvalidate',[UserController::class,'loginvalidate'])->name('loginvalidate');
+
+Route::resource('orders',OrderContrsssssssssssssssssssssssssssssssssssssssssssssoller::class);
+Route::resource('users',UserController::class);
+Route::resource('categories',CategoryController::class);
+
+
+
+
+
